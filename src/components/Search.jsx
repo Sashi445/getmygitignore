@@ -20,7 +20,6 @@ const Search = () => {
             headers: headers
         }).then((res) => res.json())
             .then(data => {
-                console.log(data);
                 setTemplates(data);
             }).catch(err => {
                 alert(err.message);
@@ -42,7 +41,6 @@ const Search = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setCurrentTemplate(data)
             })
             .catch(err => alert(err.message));

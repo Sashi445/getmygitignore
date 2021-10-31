@@ -19,7 +19,11 @@ const TemplateResult = (props) => {
                     <h4>{name}</h4>
                     <div className="badge bg-secondary cursor-pointer border border-dark rounded" onClick={() => handleClick()} >{showMessage ? <span className="text-dark"><i className="fas fa-clipboard-check text-success"></i> copied</span> : <span className="text-dark"><i className="far fa-clipboard"></i> copy</span>}</div>
                 </div>
-                <div className="my-5"><p>{source}</p></div>
+                <div className="my-5">
+                    <pre>
+                        <p>{source}</p>
+                    </pre>
+                </div>
             </div>
         </div>
     );
